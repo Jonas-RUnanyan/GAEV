@@ -15,7 +15,7 @@ public class RoomGenerator : MonoBehaviour
     private Pool pool;
 
     [FormerlySerializedAs("roomData")] public static RoomObjects roomObjects;
-    public RoomObjects roomAssets;
+
 
 
     //reference for the room object so ItemPlacer can place the objects as children of room (this is important for exporting the room)
@@ -53,9 +53,6 @@ public class RoomGenerator : MonoBehaviour
 
     void Start()
     {
-
-        roomObjects = roomAssets;
-
         //creation (and naming) of the GameObjects corresponding to the components of the room
         room = new GameObject("Room");
         floor = new GameObject("Floor");

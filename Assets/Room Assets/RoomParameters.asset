@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: RoomParameters
   m_EditorClassIdentifier: 
   width: 8.3
-  length: 11.8
+  length: 12.2
   height: 4.56
   hasRoof: 1
-  doorMeasures: {x: 2.33, y: 2.42}
-  N_target: 1
-  S_target: 1
-  E_target: 2
+  doorMeasures: {x: 0.69, y: 2.36}
+  N_target: 5
+  S_target: 0
+  E_target: 10
   W_target: 1
-  baseColor: {r: 0.17817716, g: 0.899371, b: 0.50041413, a: 0}
+  baseColor: {r: 0.5849056, g: 0.19680783, b: 0.19680783, a: 0}
