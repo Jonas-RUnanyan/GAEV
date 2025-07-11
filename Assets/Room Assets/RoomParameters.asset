@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249791779294bf54cb474add27c17de2, type: 3}
+  m_Name: RoomParameters
+  m_EditorClassIdentifier: 
+  width: 8.3
+  length: 11.8
+  height: 4.56
+  hasRoof: 1
+  doorMeasures: {x: 2.33, y: 2.42}
+  N_target: 1
+  S_target: 1
+  E_target: 2
+  W_target: 1
+  baseColor: {r: 0.17817716, g: 0.899371, b: 0.50041413, a: 0}
