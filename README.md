@@ -31,6 +31,7 @@ Autores: Jonás Rodríguez Unanyan y Maria Laura Hernández Hernández
 ## 🧪 Uso
 
 Para comenzar, asegúrate de que el objeto `RoomGenerator` esté **activo** y que el objeto `RoomLoader` esté **inactivo**. Puedes cambiar su estado con clic derecho > *Toggle Active State* en el panel de jerarquía de Unity.
+
 ![Objeto RoomGenerator activado](images/roomGenerator_highlight.jpg)
 
 Ejecuta la escena con el botón *Play*. Los controles de la cámara son los siguientes:
@@ -38,6 +39,7 @@ Ejecuta la escena con el botón *Play*. Los controles de la cámara son los sigu
 - **Clic medio + arrastrar** para mover la vista.
 
 En el inspector de `RoomGenerator`, ubica el componente **Room Par** y haz doble clic sobre `RoomParameters` para acceder al objeto que contiene los parámetros de configuración de la habitación.
+
 ![Parámetros de RoomGenerator](images/roomGenerator_parameters.jpg)
 
 Allí podrás definir:
@@ -45,14 +47,17 @@ Allí podrás definir:
 - **Tejado**: incluir o no un tejado.
 - **Puertas**: medidas, número y distribución por pared (ubicadas de forma equidistante).
 - **Color de las paredes**.
+
 ![Parámetros de la habitación](images/roomParameters_parameters.jpg)
 
 Para añadir objetos al entorno, selecciona el objeto `ItemPlacer` en la jerarquía.
+
 ![ItemPlacer en el inspector de Unity](images/itemPlacer_highlight.jpg)
 
 En su inspector encontrarás:
 - Una **lista de objetos disponibles**.
 - Un campo de texto denominado **Item Name**, donde deberás ingresar el nombre del objeto tal como aparece en la lista.
+
 ![Parámetros de ItemPlacer](images/itemPlacer_parameters.jpg)
 
 Para colocar un objeto:
@@ -64,6 +69,7 @@ Para rotar un objeto antes de colocarlo, mantén presionado el clic derecho y ar
 Cuando la habitación esté configurada a tu gusto, presiona la tecla **G** para guardar la configuración en un archivo `.json`. La ubicación del archivo se mostrará en la consola de Unity.
 
 Si deseas cargar una habitación previamente guardada, desactiva el objeto `RoomGenerator` y activa el objeto `RoomLoader`. Al ejecutar la escena, la habitación se cargará automáticamente según los datos almacenados.
+
 ![Objeto RoomLoader activado](images/roomLoader_highlight.jpg)
 
 
