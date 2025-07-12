@@ -45,19 +45,29 @@ Autores: Jonás Rodríguez Unanyan y Maria Laura Hernández Hernández
 ## 🧪 Uso
 
 Para empezar, asegúrate de de que el objeto RoomGenerator esté activo y el objeto RoomLoader inactivo (click derecho > "Toggle Active State")
+
 ![Objeto RoomGenerator activado](images/roomGenerator_highlight.jpg)
+
 Dale al play, los controles de la cámara son WASD para moverse, presionar la rueda del ratón y arrastar para mover la cámara. En el inspector del objeto RoomGenerator encontrarás el apartado "Room Par", haz doble click en RoomParameters para acceder al objeto que contiene los parámetros de la habitación.
+
 ![Parámetros de RoomGenerator](images/roomGenerator_parameters.jpg)
+
 En este objeto podremos ver los parámetros de la habitación, que son altura, anchura y profundidad; si tiene o no tejado; las medidas de las puertas que tenga; las puertas en cada una de las paredes (colocadas de manera equidistante entre ellas) y por último el color de las paredes
+
 ![Parámetros de la habitación](images/roomParameters_parameters.jpg)
+
 Para colocar distintos objetos en la habitación, deberemos irnos al objeto ItemPlacer
+
 ![ItemPlacer en el inspector de Unity](images/itemPlacer_highlight.jpg)
+
 En él, veremos la lista de objetos que podemos colocar, y la caja de texto "Item Name", en la que deberemos escribir el nombre del objeto tal y como aparece en la lista. Para colocarlo simplemente deberemos colocar el ratón en el punto que deseemos y hacer click, y el objeto quedará colocado. Si deseáramos rotarlo, antes de colocarlo deberíamos mantener pulsado el click derecho y arrastar, hasta que veamos el objeto con la rotación que queramos
+
 ![Parámetros de ItemPlacer](images/itemPlacer_parameters.jpg)
 
 Cuando tengamos una habitación a nuestro gusto, bastará con pulsar la tecla G para guardar en un archivo json nuestra habitación, cuya ubicación veremos en un mensaje que se imprimirá por la consola de Unity.
 
 Si lo que queremos es caergar la habitación que hemos creado previamente, bastará con desactivar el objeto RoomGenerator y activar RoomLoader para que al dar al play la habitación se cargue automáticamente tal y como la habíamos guardado.
+
 ![Objeto RoomLoader activado](images/roomLoader_highlight.jpg)
 
 
