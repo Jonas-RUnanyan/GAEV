@@ -1,6 +1,7 @@
 # GAEV
 
-Este proyecto permite generar de manera sencilla habitaciones proporcionando sus parámetros y luego guardarlas en un archivo .json, así como cargar la habitación generada
+Este proyecto facilita la generación de habitaciones de forma sencilla mediante la especificación de sus parámetros, permitiendo posteriormente guardar la configuración en un archivo `.json` y cargar la habitación generada a partir de dicho archivo.
+
 
 ---
 Autores: Jonás Rodríguez Unanyan y Maria Laura Hernández Hernández
@@ -12,22 +13,7 @@ Autores: Jonás Rodríguez Unanyan y Maria Laura Hernández Hernández
 
 ---
 
-## ⚙️ Instalación
 
-> 👇 Usa listas numeradas con código incrustado usando triple acento grave (```) para comandos.
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
-   ```
-2. Entra en la carpeta del proyecto:
-   ```bash
-   cd tu-repo
-   ```
-3. Instala las dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
 ## 📦 Instalación
 
 1. Clona el repositorio:
@@ -44,29 +30,45 @@ Autores: Jonás Rodríguez Unanyan y Maria Laura Hernández Hernández
 
 ## 🧪 Uso
 
-Para empezar, asegúrate de de que el objeto RoomGenerator esté activo y el objeto RoomLoader inactivo (click derecho > "Toggle Active State")
+Para comenzar, asegúrate de que el objeto `RoomGenerator` esté **activo** y que el objeto `RoomLoader` esté **inactivo**. Puedes cambiar su estado con clic derecho > *Toggle Active State* en el panel de jerarquía de Unity.
 
 ![Objeto RoomGenerator activado](images/roomGenerator_highlight.jpg)
 
-Dale al play, los controles de la cámara son WASD para moverse, presionar la rueda del ratón y arrastar para mover la cámara. En el inspector del objeto RoomGenerator encontrarás el apartado "Room Par", haz doble click en RoomParameters para acceder al objeto que contiene los parámetros de la habitación.
+Ejecuta la escena con el botón *Play*. Los controles de la cámara son los siguientes:
+- **WASD** para desplazarse.
+- **Clic medio + arrastrar** para mover la vista.
+
+En el inspector de `RoomGenerator`, ubica el componente **Room Par** y haz doble clic sobre `RoomParameters` para acceder al objeto que contiene los parámetros de configuración de la habitación.
 
 ![Parámetros de RoomGenerator](images/roomGenerator_parameters.jpg)
 
-En este objeto podremos ver los parámetros de la habitación, que son altura, anchura y profundidad; si tiene o no tejado; las medidas de las puertas que tenga; las puertas en cada una de las paredes (colocadas de manera equidistante entre ellas) y por último el color de las paredes
+Allí podrás definir:
+- **Dimensiones**: altura, anchura y profundidad de la habitación.
+- **Tejado**: incluir o no un tejado.
+- **Puertas**: medidas, número y distribución por pared (ubicadas de forma equidistante).
+- **Color de las paredes**.
 
 ![Parámetros de la habitación](images/roomParameters_parameters.jpg)
 
-Para colocar distintos objetos en la habitación, deberemos irnos al objeto ItemPlacer
+Para añadir objetos al entorno, selecciona el objeto `ItemPlacer` en la jerarquía.
 
 ![ItemPlacer en el inspector de Unity](images/itemPlacer_highlight.jpg)
 
-En él, veremos la lista de objetos que podemos colocar, y la caja de texto "Item Name", en la que deberemos escribir el nombre del objeto tal y como aparece en la lista. Para colocarlo simplemente deberemos colocar el ratón en el punto que deseemos y hacer click, y el objeto quedará colocado. Si deseáramos rotarlo, antes de colocarlo deberíamos mantener pulsado el click derecho y arrastar, hasta que veamos el objeto con la rotación que queramos
+En su inspector encontrarás:
+- Una **lista de objetos disponibles**.
+- Un campo de texto denominado **Item Name**, donde deberás ingresar el nombre del objeto tal como aparece en la lista.
+
+Para colocar un objeto:
+1. Ubica el cursor en el punto deseado de la habitación.
+2. Haz clic izquierdo para colocarlo.
+
+Para rotar un objeto antes de colocarlo, mantén presionado el clic derecho y arrastra hasta obtener la orientación deseada.
 
 ![Parámetros de ItemPlacer](images/itemPlacer_parameters.jpg)
 
-Cuando tengamos una habitación a nuestro gusto, bastará con pulsar la tecla G para guardar en un archivo json nuestra habitación, cuya ubicación veremos en un mensaje que se imprimirá por la consola de Unity.
+Cuando la habitación esté configurada a tu gusto, presiona la tecla **G** para guardar la configuración en un archivo `.json`. La ubicación del archivo se mostrará en la consola de Unity.
 
-Si lo que queremos es caergar la habitación que hemos creado previamente, bastará con desactivar el objeto RoomGenerator y activar RoomLoader para que al dar al play la habitación se cargue automáticamente tal y como la habíamos guardado.
+Si deseas cargar una habitación previamente guardada, desactiva el objeto `RoomGenerator` y activa el objeto `RoomLoader`. Al ejecutar la escena, la habitación se cargará automáticamente según los datos almacenados.
 
 ![Objeto RoomLoader activado](images/roomLoader_highlight.jpg)
 
