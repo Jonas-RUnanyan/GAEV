@@ -1,8 +1,5 @@
 # GAEV
 
-> 👇 Usa un encabezado de nivel 1 (`#`) para el nombre del proyecto.
-> También puedes usar una breve descripción o cita debajo.
-
 Este proyecto permite generar de manera sencilla habitaciones proporcionando sus parámetros y luego guardarlas en un archivo .json, así como cargar la habitación generada
 
 ---
@@ -31,7 +28,7 @@ Autores: Jonás Rodríguez Unanyan y Maria Laura Hernández Hernández
    ```bash
    pip install -r requirements.txt
    ```
-##📦 Instalación
+## 📦 Instalación
 
 1. Clona el repositorio:
    ```bash
